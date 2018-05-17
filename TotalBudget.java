@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class TotalBudget {
    
     Scanner in = new Scanner(System.in);
-	double totalExpenses;
+    double totalExpenses;
     double foodExpenses;
     double gasExpenses;
     double phonebill;
@@ -26,15 +26,15 @@ public class TotalBudget {
     
         totalExpenses = (foodExpenses + gasExpenses + phonebill + recreationalExpenses);
         System.out.println("Your total monthly expenses are $" + totalExpenses);
-    } //method for calculating the users total expenses
+    } 
     
     public void getDifference() { //method for calculating the difference between expenses and budget
     	
     	difference = (totalExpenses - budget);
     	System.out.println("You are over your budget by $"+ difference);
-    } //method for calculating how much the user went over or under
+    }
     
-    publi-c void get_recommended_budget() { //method for giving the user a recommended budget
+    public void get_recommended_budget() { //method for giving the user a recommended budget
     	System.out.println("Please enter your monthly income");
     	user_income = in.nextDouble(); 
     	rAmount_for_essentials = (user_income * .50);
